@@ -1,0 +1,22 @@
+{
+  "name": "otl-issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.mjs",
+  "type": "module",
+  "scripts": {
+    "start": "node --import ./src/instrumentations.mjs src/index.mjs",
+    "dev": "node --watch --import ./src/instrumentations.mjs src/index.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@azure/monitor-opentelemetry": "^1.1.0",
+    "@opentelemetry/auto-instrumentations-node": "^0.39.4",
+    "@opentelemetry/sdk-metrics": "^1.18.0",
+    "@opentelemetry/sdk-node": "^0.45.0",
+    "@opentelemetry/sdk-trace-node": "^1.18.0",
+    "express": "^4.18.2"
+  }
+}
